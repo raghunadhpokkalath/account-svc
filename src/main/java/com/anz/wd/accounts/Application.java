@@ -1,11 +1,11 @@
 package com.anz.wd.accounts;
+
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
 public class Application {
-
-    public  String sayHello(){
-        return "ANZ WD Hello SAY";
-    }
-
     public static void main(String[] args){
-        System.out.println(new Application().sayHello());
+        SpringApplication.run(Application.class,args);
     }
 }

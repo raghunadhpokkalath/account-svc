@@ -8,3 +8,5 @@ build
 .idea/misc.xml
 .idea/vcs.xml
 .idea/workspace.xml
+.idea/compiler.xml
+.idea/uiDesigner.xml
