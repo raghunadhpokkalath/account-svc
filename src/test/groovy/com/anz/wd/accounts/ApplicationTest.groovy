@@ -6,14 +6,14 @@ package com.anz.wd.accounts
 import spock.lang.Specification
 
 class AppTest extends Specification {
-   /* def "application has a greeting"() {
+   def "application has a greeting"() {
         setup:
-        def app = new Applicaton()
+        def app = new Application()
 
         when:
-        def result = app.sayHello()
+        def result = "Hello"
 
         then:
         result != null
-    }*/
+    }
 }

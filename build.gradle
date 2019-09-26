@@ -16,6 +16,8 @@ plugins {
     // Apply the groovy plugin to also add support for Groovy (needed for Spock)
     id 'groovy'
 
+    id 'jacoco'
+
     //apply spring boot
     id 'org.springframework.boot'  version '2.1.6.RELEASE'
 
@@ -33,7 +35,9 @@ targetCompatibility = 1.8
 
 dependencies {
     compile 'org.springframework.boot:spring-boot-starter-web'
-
+    compile 'org.springframework.boot:spring-boot-starter-data-jpa'
+    compile 'com.h2database:h2'
+    compile  'org.modelmapper:modelmapper:2.3.2'
 
     compileOnly 'org.projectlombok:lombok:1.18.4'
     annotationProcessor 'org.projectlombok:lombok:1.18.4'
@@ -47,4 +51,8 @@ dependencies {
     testImplementation 'org.spockframework:spock-core:1.2-groovy-2.5'
 }
 
+bootRun {
+    systemProperties = System.properties
+}
+//test.finalizedBy jacocoTestReport
 mainClassName = 'com.anz.wd.accounts.Application'
