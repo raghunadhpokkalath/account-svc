@@ -20,7 +20,7 @@ public class TransactionsController {
     @Autowired
     AccountService acctService;
 
-    @GetMapping("/accounts/{accountNum}/transcations")
+    @GetMapping("/accounts/{accountNum}/transactions")
     public List<TransactionDto> getTransactions(@PathVariable String accountNum){
 
         List<TransactionDto> transactionList= acctService.getTransactions(accountNum);

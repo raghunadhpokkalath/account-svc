@@ -15,6 +15,10 @@ Run the Tests
  
  
  H2 Console can be accessed using .Please confirm the jdbc url is jdbc:h2:mem:accountdb .If this is not the url please change Please dont change userid password
- http://localhost:8080/h2-console 
+ http://localhost:8080/api/h2-console 
  
+ ##api-tests 
+ APi tests uses super test to configure api tests please install npm as below
  
+ To run the api tests install npm using brew command
+ brew install npm
