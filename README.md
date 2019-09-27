@@ -26,33 +26,36 @@ File names are relative to this repository's root unless otherwise stated
 .
 ├── README.md
 ├── api-tests
-│   ├── node_modules
+│   ├── node_modules //Node modules required for api-test
 │   ├── package-lock.json
-│   ├── package.json
-│   └── test
+│   ├── package.json 
+│   └── test / //api-test js files
 ├── build
-│   ├── bootScripts
-│   ├── classes
-│   ├── distributions
-│   ├── generated
-│   ├── jacoco
-│   ├── libs
-│   ├── reports
-│   ├── resources
-│   ├── scripts
-│   ├── test-results
-│   └── tmp
-├── build.gradle
+│   ├──....
+├── build.gradle //Gradle build file
 ├── gradle
 │   └── wrapper
 ├── gradlew
 ├── gradlew.bat
-├── postman-collection
+├── postman-collection  //PostMan collection for the API's
 │   └── Accounts&Transactions.postman_collection.json
 ├── settings.gradle
 └── src
     ├── main
+    │   ├── java
+    │   │   └── com
+    │   │       └── anz
+    │   │           └── wd
+    │   │               └── accounts
+    │   │                   ....  //Application source code
+    │   └── resources
+    │       ├── application.properties 
+    │       └── data.sql //SQL to load into h2database
     └── test
+        ├── groovy
+        │   └── .. //Spring spock test files
+        └── resources
+
 
 ```
 
@@ -83,4 +86,5 @@ http://localhost:8080/api/h2-console
 Before clicking connect button .Please make sure JDBC URL is configured as "jdbc:h2:mem:accountdb"
 
 click connect without giving a password for user 'sa' 
- 
+
+Data for H2 database is loaded from src/main/resources/data.sql 
