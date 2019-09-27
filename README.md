@@ -1,4 +1,37 @@
-Account Services to Fetch List of Accounts and Show the transcation list
+Wholesale Digital Account Services
+=========================================
+
+#Reading guide
+File names are relative to this repoistory's root unless otherwise stated
+
+###Development Stack
+- Java 8
+- Spring Boot 2.1.6.RELEASE
+- Gradle 5.2.1 (gradlew can be used )
+- Swagger
+- Spock
+- Mocha and SuperTest for api-tests
+
+### Set up guide for  Mac
+-- install homebrew
+-- install openjdk java8
+-- install npm 
+
+
+### Repository is layout as follows 
+
+
+
+### Running application locally 
+Before running the application ensure that the setup required for mac is completed
+   -  git clone https://github.com/raghunadhpokkalath/anz-wd-account-svc.git
+   -  cd anz-wd-account-svc
+   - run "./gradlew clean build"  (This will build and run the test .Jacoco plugin is integrated to ensure code coverage is 100%)
+   - run "./gradlew bootRun"  ("This will start the application in 8080 port")
+
+
+
+#
 
 #Accounts Endpoint
 This endpoint will return the list of accounts corresponding to a customer id
@@ -22,3 +55,9 @@ Run the Tests
  
  To run the api tests install npm using brew command
  brew install npm
+ 
+ Swagger -ui 
+http://localhost:8080/api/swagger-ui.html
+
+ 
+ 
