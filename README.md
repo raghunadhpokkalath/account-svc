@@ -19,8 +19,9 @@ File names are relative to this repository's root unless otherwise stated
 
 
 ### Repository is layout as follows 
+```
 
-
+```
 
 ### Running application locally 
 Before running the application ensure that the setup required for mac is completed
@@ -36,36 +37,17 @@ Before running the application ensure that the setup required for mac is complet
 ### Running API-Tests
  Before running api-test ensure that applications is running at 8080 port
  - cd api-tests 
- - 
- - "Before running npm ensure that "
+ - "Before running npm ensure that npm is installed on your local machine
  -  run 'npm test'
-#
 
-#Accounts Endpoint
-This endpoint will return the list of accounts corresponding to a customer id
-http://localhost:8080/api/customers/123/accounts
-
-Used Jaccoo for code coverage report
-
-Run the Tests
- ./gradlew test
- 
- 
- Integrate checkstyle
- integrate find bug
- 
- 
- H2 Console can be accessed using .Please confirm the jdbc url is jdbc:h2:mem:accountdb .If this is not the url please change Please dont change userid password
- http://localhost:8080/api/h2-console 
- 
- ##api-tests 
- APi tests uses super test to configure api tests please install npm as below
- 
- To run the api tests install npm using brew command
- brew install npm
- 
- Swagger -ui 
-http://localhost:8080/api/swagger-ui.html
 
  
+### H2 DB console
+H2 in-memory database is used to store the account and transaction details. The H2 console can be accessed using below link 
+
+http://localhost:8080/api/h2-console
+
+Before clicking connect button .Please make sure JDBC URL is configured as "jdbc:h2:mem:accountdb"
+
+click connect without giving a password for user 'sa' 
  
