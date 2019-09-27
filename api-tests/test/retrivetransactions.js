@@ -3,7 +3,7 @@ var common = require("./common");
 
 var request = common.request
 var assert = common.assert
-describe('Get Transactions List  Test', function() {
+describe('Get Transactions List', function() {
     it('200 - Respond with List of transactions for the Account 5678678792', function(done) {
              request.get('accounts/5678678692/transactions')
             .set('Content-Type', 'text/json')

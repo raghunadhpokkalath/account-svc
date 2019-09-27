@@ -47,6 +47,7 @@ dependencies {
     // Use the latest Groovy version for Spock testing
     testImplementation 'org.codehaus.groovy:groovy-all:2.5.4'
 
+    testCompile "org.springframework.boot:spring-boot-starter-test"
     // Use the awesome Spock testing and specification framework even with Java
     testImplementation 'org.spockframework:spock-core:1.2-groovy-2.5'
 }
@@ -54,5 +55,25 @@ dependencies {
 bootRun {
     systemProperties = System.properties
 }
-//test.finalizedBy jacocoTestReport
+
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            element = 'CLASS'
+            limit {
+                counter = 'LINE'
+                value = 'COVEREDRATIO'
+                minimum = 1.0
+            }
+            excludes = [
+                    'com.anz.wd.accounts.Application',
+                    'com.anz.wd.accounts.config.ApplicationConfig'
+            ]
+        }
+    }
+}
+
+
+test.finalizedBy jacocoTestReport,jacocoTestCoverageVerification
 mainClassName = 'com.anz.wd.accounts.Application'

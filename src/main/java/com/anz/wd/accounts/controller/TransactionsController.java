@@ -18,12 +18,12 @@ import java.util.List;
 public class TransactionsController {
 
     @Autowired
-    AccountService acctService;
+    AccountService accountService;
 
     @GetMapping("/accounts/{accountNum}/transactions")
     public List<TransactionDto> getTransactions(@PathVariable String accountNum){
 
-        List<TransactionDto> transactionList= acctService.getTransactions(accountNum);
+        List<TransactionDto> transactionList= accountService.getTransactions(accountNum);
 
         return transactionList;
     }

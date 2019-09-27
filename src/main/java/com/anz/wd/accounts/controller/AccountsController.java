@@ -21,6 +21,7 @@ public class AccountsController {
     @Autowired
     AccountService accountService;
 
+
     @GetMapping("/customers/{customerId}/accounts")
     public List<AccountDto> getAccounts(@PathVariable String customerId){
 
