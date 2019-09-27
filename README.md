@@ -28,6 +28,7 @@ Before running the application ensure that the setup required for mac is complet
    -  cd anz-wd-account-svc
    - run "./gradlew clean build"  (This will build and run the test .Jacoco plugin is integrated to ensure code coverage is 100%)
    - run "./gradlew bootRun"  ("This will start the application in 8080 port")
+   - access the api using below endpoint or import the postman collection from postman-collection/
 
 
 

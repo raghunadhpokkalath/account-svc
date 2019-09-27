@@ -1,12 +1,12 @@
 {
 	"info": {
 		"_postman_id": "9839f303-302b-405d-81dc-9e142e421168",
-		"name": "ANZ Insto Accounts",
+		"name": "Accounts&Transactions",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
 	"item": [
 		{
-			"name": "ANZ Insto Accounts - Sucess",
+			"name": "Accounts - Sucess",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -15,7 +15,7 @@
 			"response": []
 		},
 		{
-			"name": "ANZ Insto Accounts - Failure",
+			"name": "Accounts -  Failure",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -24,7 +24,7 @@
 			"response": []
 		},
 		{
-			"name": "Transactions List - Sucess",
+			"name": "Transactions - Sucess",
 			"request": {
 				"method": "GET",
 				"header": [],
@@ -33,7 +33,7 @@
 			"response": []
 		},
 		{
-			"name": "Transactions List - Failure",
+			"name": "Transactions - Failure",
 			"request": {
 				"method": "GET",
 				"header": [],
