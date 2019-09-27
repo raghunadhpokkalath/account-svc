@@ -29,10 +29,11 @@ File names are relative to this repository's root unless otherwise stated
 │   ├── node_modules //Node modules required for api-test
 │   ├── package-lock.json
 │   ├── package.json 
-│   └── test / //api-test js files
+│   └── test 
+         ├──....//api-test js files
 ├── build
-│   ├──....
-├── build.gradle //Gradle build file
+│   ├──.... //Build folder
+├── build.gradle //Build file
 ├── gradle
 │   └── wrapper
 ├── gradlew
@@ -43,11 +44,7 @@ File names are relative to this repository's root unless otherwise stated
 └── src
     ├── main
     │   ├── java
-    │   │   └── com
-    │   │       └── anz
-    │   │           └── wd
-    │   │               └── accounts
-    │   │                   ....  //Application source code
+    │   │   └── ..//Application source code
     │   └── resources
     │       ├── application.properties 
     │       └── data.sql //SQL to load into h2database
