@@ -13,9 +13,12 @@ File names are relative to this repository's root unless otherwise stated
 - Mocha and SuperTest for api-tests
 
 ### Set up guide for  Mac
--- install homebrew
--- install openjdk java8
--- install npm 
+- install homebrew
+- install openjdk java8 
+    - brew tap adoptopenjdk/openjdk 
+    - brew cask install adoptopenjdk8)
+- install npm 
+    - brew install npm
 
 
 ### Repository is layout as follows 
