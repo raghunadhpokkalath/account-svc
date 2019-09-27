@@ -1,10 +1,10 @@
 ANZ Wholesale Engineering - Accounts& Transaction Services
 =========================================
 
-#Reading guide
+## Reading guide
 File names are relative to this repository's root unless otherwise stated
 
-###Development Stack
+### Development Stack
 - Java 8
 - Spring Boot 2.1.6.RELEASE
 - Gradle 5.2.1 (gradlew can be used )
@@ -21,7 +21,7 @@ File names are relative to this repository's root unless otherwise stated
     - brew install npm
 
 
-### Repository is layout as follows 
+### Repository  Layout  
 ```
 .
 ├── README.md
@@ -84,4 +84,4 @@ Before clicking connect button .Please make sure JDBC URL is configured as "jdbc
 
 click connect without giving a password for user 'sa' 
 
-Data for H2 database is loaded from src/main/resources/data.sql 
+Data for H2 database is loaded from 'src/main/resources/data.sql' 
