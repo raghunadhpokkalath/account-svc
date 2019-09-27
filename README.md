@@ -1,4 +1,4 @@
-Wholesale Digital Account Services
+ANZ Wholesale Engineering - Accounts& Transaction Services
 =========================================
 
 #Reading guide
@@ -35,7 +35,7 @@ Before running the application ensure that the setup required for mac is complet
    - Swagger-ui  - http://localhost:8080/api/swagger-ui.html
 
 ### Running API-Tests
- Before running api-test ensure that applications is running at 8080 port
+ Before running api-test ensure that application is running at 8080 port
  - cd api-tests 
  - "Before running npm ensure that npm is installed on your local machine
  -  run 'npm test'
