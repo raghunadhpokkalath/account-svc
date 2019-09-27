@@ -9,5 +9,11 @@
   "devDependencies": {},
   "scripts": {
     "test": "mocha test/"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/raghunadhpokkalath/anz-wd-account-svc.git"
+  },
+  "author": "Raghunadh Pokkalath",
+  "license": "ISC"
 }

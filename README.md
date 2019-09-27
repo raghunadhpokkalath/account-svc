@@ -2,7 +2,7 @@ Wholesale Digital Account Services
 =========================================
 
 #Reading guide
-File names are relative to this repoistory's root unless otherwise stated
+File names are relative to this repository's root unless otherwise stated
 
 ###Development Stack
 - Java 8
@@ -28,10 +28,17 @@ Before running the application ensure that the setup required for mac is complet
    -  cd anz-wd-account-svc
    - run "./gradlew clean build"  (This will build and run the test .Jacoco plugin is integrated to ensure code coverage is 100%)
    - run "./gradlew bootRun"  ("This will start the application in 8080 port")
-   - access the api using below endpoint or import the postman collection from postman-collection/
+   - access the api using below endpoint or import the postman collection from "postman-collection/Accounts&Transactions.postman_collection.json"
+   - Accounts API  - http://localhost:8080/api/customers/10000000/accounts
+   - Transactions API - http://localhost:8080/api/accounts/5678678692/transactions
+   - Swagger-ui  - http://localhost:8080/api/swagger-ui.html
 
-
-
+### Running API-Tests
+ Before running api-test ensure that applications is running at 8080 port
+ - cd api-tests 
+ - 
+ - "Before running npm ensure that "
+ -  run 'npm test'
 #
 
 #Accounts Endpoint
