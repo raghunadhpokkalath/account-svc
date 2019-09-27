@@ -23,6 +23,36 @@ File names are relative to this repository's root unless otherwise stated
 
 ### Repository is layout as follows 
 ```
+.
+├── README.md
+├── api-tests
+│   ├── node_modules
+│   ├── package-lock.json
+│   ├── package.json
+│   └── test
+├── build
+│   ├── bootScripts
+│   ├── classes
+│   ├── distributions
+│   ├── generated
+│   ├── jacoco
+│   ├── libs
+│   ├── reports
+│   ├── resources
+│   ├── scripts
+│   ├── test-results
+│   └── tmp
+├── build.gradle
+├── gradle
+│   └── wrapper
+├── gradlew
+├── gradlew.bat
+├── postman-collection
+│   └── Accounts&Transactions.postman_collection.json
+├── settings.gradle
+└── src
+    ├── main
+    └── test
 
 ```
 
