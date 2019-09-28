@@ -34,6 +34,8 @@ File names are relative to this repository's root unless otherwise stated
 ├── build
 │   ├──.... //Build folder
 ├── build.gradle //Build file
+├── docs
+|    └── swagger.yaml //Swagger documentation
 ├── gradle
 │   └── wrapper
 ├── gradlew

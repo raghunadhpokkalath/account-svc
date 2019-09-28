@@ -1,0 +1,117 @@
+swagger: '2.0'
+info:
+  description: Api Documentation
+  version: '1.0'
+  title: Api Documentation
+  termsOfService: 'urn:tos'
+  contact: {}
+  license:
+    name: Apache 2.0
+    url: 'http://www.apache.org/licenses/LICENSE-2.0'
+host: 'localhost:8080'
+basePath: /api
+tags:
+  - name: accounts-controller
+    description: Accounts Controller
+  - name: transactions-controller
+    description: Transactions Controller
+paths:
+  '/accounts/{accountNum}/transactions':
+    get:
+      tags:
+        - transactions-controller
+      summary: RetrieveTransactions
+      description: 'This endpoint retrieve Transactions corresponding to customer id '
+      operationId: getTransactionsUsingGET
+      produces:
+        - '*/*'
+      parameters:
+        - name: accountNum
+          in: path
+          description: accountNum
+          required: true
+          type: string
+      responses:
+        '200':
+          description: Transactio retrieved
+          schema:
+            $ref: '#/definitions/TransactionDto'
+        '400':
+          description: No Matching record found
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '500':
+          description: Internal Server Error
+      deprecated: false
+  '/customers/{customerId}/accounts':
+    get:
+      tags:
+        - accounts-controller
+      summary: RetrieveAccounts
+      description: 'This endpoint retrieve accounts corresponding to customer id '
+      operationId: getAccountsUsingGET
+      produces:
+        - '*/*'
+      parameters:
+        - name: customerId
+          in: path
+          description: customerId
+          required: true
+          type: string
+      responses:
+        '200':
+          description: Accounts retrieved
+          schema:
+            $ref: '#/definitions/AccountDto'
+        '400':
+          description: No Matching record found
+        '401':
+          description: Unauthorized
+        '403':
+          description: Forbidden
+        '404':
+          description: Not Found
+        '500':
+          description: Internal Server Error
+      deprecated: false
+definitions:
+  AccountDto:
+    type: object
+    properties:
+      accountName:
+        type: string
+      accountNumber:
+        type: string
+      accountType:
+        type: string
+      availBalance:
+        type: number
+        format: double
+      balanceDate:
+        type: string
+        format: date
+      currCode:
+        type: string
+    title: AccountDto
+  TransactionDto:
+    type: object
+    properties:
+      accountName:
+        type: string
+      accountNumber:
+        type: string
+      currCode:
+        type: string
+      transAmount:
+        type: number
+        format: double
+      transType:
+        type: string
+      valueDate:
+        type: string
+        format: date
+    title: TransactionDto
