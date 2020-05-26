@@ -1,4 +1,4 @@
-ANZ Wholesale Engineering - Accounts& Transaction Services
+ Accounts& Transaction Services
 =========================================
 
 ## Reading guide
